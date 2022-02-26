@@ -1,0 +1,1114 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.swiper-button-next:active,
+.swiper-button-next:focus,
+.swiper-button-prev:active,
+.swiper-button-prev:focus {
+  outline: none;
+}
+.swiper-button-prev::-moz-focus-inner,
+.swiper-button-next::-moz-focus-inner {
+  border: 0;
+}
+
+.logo,
+.service,
+.offers,
+.pictures {
+  padding-bottom: 45px;
+}
+
+.service,
+.offers,
+.slider,
+.pictures,
+.reviews {
+  padding-top: 45px;
+}
+
+.container {
+  max-width: 1002px;
+  margin: 0 auto;
+}
+
+.lock {
+  overflow-y: hidden;
+}
+
+.lock .swiper-slide {
+  width: 100% !important;
+}
+
+.header {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #b94311;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  position: fixed;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  left: 1px;
+  z-index: 3;
+  opacity: 0;
+  transition: transform 0.2s ease;
+  transform: translateX(-150%);
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-left: 50px;
+  max-width: 420px;
+  min-height: 615px;
+  background-color: white;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.menu__content:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.menu--active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.burger-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  z-index: 4;
+  width: 30px;
+  height: 23px;
+  transition: color 0.2s linear;
+}
+
+.burger-button__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: currentColor;
+  transform-origin: right;
+  transition: transform 0.1s ease;
+}
+
+.burger-button__line:first-child {
+  top: 0;
+}
+
+.burger-button__line:nth-child(2) {
+  top: calc(50% - 3px / 2);
+}
+
+.burger-button__line:last-child {
+  bottom: 0;
+}
+
+.burger-button--active {
+  color: #e1670e;
+}
+
+.burger-button--active .burger-button__line:first-child {
+  transform: rotate(-45deg);
+}
+
+.burger-button--active .burger-button__line:nth-child(2) {
+  display: none;
+}
+
+.burger-button--active .burger-button__line:last-child {
+  transform: rotate(45deg);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  font-size: 24px;
+  color: white;
+}
+
+.menu__link {
+  font-size: 24px;
+  color: #ee9a4d;
+}
+
+.link {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.1s linear;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+.link::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ef7b00;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+.link:hover {
+  color: #ee9a4d;
+}
+
+.link:active {
+  color: #fff380;
+}
+
+.li-header {
+  margin-right: 20px;
+}
+
+.tel-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 50px;
+  border-radius: 15px;
+  background-color: #ef7b00;
+  transition: 0.2s;
+}
+
+.tel-box:hover {
+  box-shadow: 0px 0px 18px 1px #ffd752;
+}
+
+.tel {
+  font-size: 30px;
+  color: white;
+}
+.tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tel-box::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/phone-icon.svg);
+}
+
+.container-main-slider,
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-main-slider {
+  padding: 0 25px;
+  background-position: center center;
+}
+
+.container-logo {
+  background-image: url(../img/main-mew.jpg);
+}
+
+.ms-1-img {
+  background-image: url(../img/desinfaction-new.jpg);
+}
+
+.ms-2-img {
+  background-image: url(../img/haircut-30-min.jpg);
+}
+
+.ms-3-img {
+  background-image: url(../img/without__recording.jpg);
+}
+
+.ms-4-img {
+  background-image: url(../img/cards__payment.jpg);
+}
+
+.ms-5-img {
+  background-image: url(../img/childrens__corner-new-med.jpg);
+}
+
+.ms-6-img {
+  background-image: url(../img/atmosphere.jpg);
+}
+
+.ms-7-img {
+  background-image: url(../img/professional__hairmaster.jpg);
+}
+
+.ms-8-img {
+  background-image: url(../img/cheap.jpg);
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  margin-right: 10px;
+}
+
+.main-slider-info {
+  font-size: 56px;
+  color: #ef7b00;
+  outline: 3px solid #b94311;
+  outline-offset: 3px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 48px;
+  letter-spacing: 1.2;
+  color: #ef7b00;
+}
+
+.service__main-heading {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #b94311;
+}
+
+.service__heading {
+  margin-bottom: 10px;
+  max-width: 220px;
+}
+
+.service__ul {
+  display: flex;
+  flex: 1 1 33%;
+  flex-wrap: wrap;
+}
+
+.service__li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.service__li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service__li img {
+  transition: 0.5s;
+}
+
+.service__li img:hover {
+  transform: scale(1.1);
+}
+
+.service__li:not(:nth-child(3n)) {
+  margin-right: 133px;
+}
+
+.service__li__pic {
+  margin-bottom: 30px;
+  font-size: 0;
+  line-height: 0;
+  box-shadow: 9px 7px 4px 3px #e3dede;
+  cursor: unset;
+}
+
+.price {
+  font-size: 48px;
+  color: #ef7b00;
+}
+
+.slider__item {
+  padding: 40px 60px 80px;
+  background-image: url(../img/slider-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__content {
+  display: flex;
+}
+
+.slider__item__first-pic {
+  min-width: 440px;
+  height: 410px;
+  background-image: url(../img/babushkaxd.jpg);
+  margin-right: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slider__item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers__heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.slider__heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.h4 {
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.pictures__slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower-slider-photo {
+  object-fit: cover;
+  width: 642px;
+  height: 742px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #ef7b00;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 0 25px 0;
+  max-width: 100%;
+  background-image: url(../img/reviews-back.jpg);
+  background-size: cover;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.reviews__heading {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.reviews__p {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.reviews__link {
+  position: relative;
+  padding: 10px 80px 10px 50px;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #ef7b00;
+  transition: box-shadow 0.2s linear;
+}
+
+.reviews__link::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/reviews-svg.svg);
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  right: 20px;
+}
+
+.reviews__link:hover {
+  color: #fff380;
+  box-shadow: 0px 0px 18px 1px #ffd752;
+}
+
+.container-footer {
+  display: flex;
+  margin: auto;
+}
+
+.footer__left-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px 150px 150px;
+  width: 54%;
+  background-image: url(../img/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.footer__left-content__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: center;
+}
+
+.footer__heading {
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-align: end;
+}
+
+.footer__el {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.footer__tel:hover,
+.footer__email:hover,
+.vk:hover {
+  color: #ffd752;
+}
+
+.vk:hover::after {
+  box-shadow: 0px 0px 10px 3px #7a7dff;
+}
+
+.footer__el:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer__tel::before,
+.footer__place::before,
+.footer__email::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -50px;
+}
+
+.footer__tel::before {
+  background-image: url(../img/phone-icon-footer.svg);
+}
+
+.footer__place::before {
+  background-image: url(../img/location.svg);
+}
+
+.footer__email {
+  margin-bottom: 40px;
+}
+
+.footer__email::before {
+  background-image: url(../img/letter.svg);
+}
+
+.vk {
+  position: relative;
+  max-width: 200px;
+  align-self: center;
+  font-size: 24px;
+  transform: translateX(-80px);
+  transition: color 0.2s linear;
+}
+
+.vk::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/vk.svg);
+  transform: translateX(10px) translateY(-6px);
+  transition: box-shadow 0.2s linear;
+}
+
+.footer__right-contant {
+  width: 55%;
+  position: relative;
+  margin-left: -100px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .ms-1-img {
+    background-image: url(../img/desinfaction-med.jpg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-list {
+    display: none;
+  }
+
+  .burger-button {
+    display: block;
+  }
+
+  .ms-2-img {
+    background-image: url(../img/haircut-30-min.jpg);
+  }
+
+  .ms-3-img {
+    background-image: url(../img/without__recording-med.jpg);
+  }
+
+  .ms-4-img {
+    background-image: url(../img/cards__payment-med.jpg);
+  }
+
+  .ms-6-img {
+    background-image: url(../img/atmosphere-med.jpg);
+  }
+
+  .ms-7-img {
+    background-image: url(../img/professional__hairmaster-med.jpg);
+  }
+
+  .ms-8-img {
+    background-image: url(../img/cheap-med.jpg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1032px;
+    padding: 0 15px;
+  }
+
+  .service__ul {
+    justify-content: center;
+  }
+
+  .service__li {
+    margin-bottom: 30px;
+  }
+
+  .service__li:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .service__li:nth-child(2n + 1) {
+    margin-right: 150px;
+  }
+
+  .slider__item__first-pic {
+    min-width: 340px;
+    height: 410px;
+  }
+
+  .h4 {
+    font-size: 38px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 80px;
+    opacity: 0.6;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: 1;
+  }
+
+  .review-container {
+    padding: 45px 0 25px 0;
+    max-width: 100%;
+  }
+
+  .footer__right-contant {
+    margin-left: 0;
+  }
+
+  .footer__left-content {
+    padding: 40px 50px 150px 100px;
+  }
+
+  .footer__heading {
+    align-self: center;
+    font-size: 38px;
+  }
+
+  .footer__el {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo,
+  .service,
+  .offers,
+  .pictures {
+    padding-bottom: 30px;
+  }
+
+  .service,
+  .offers,
+  .slider,
+  .pictures,
+  .reviews {
+    padding-top: 30px;
+  }
+  .container {
+    max-width: 768px;
+  }
+
+  .container-logo {
+    background-image: url(../img/logo-new.jpg);
+  }
+
+  .ms-2-img {
+    background-image: url(../img/haircut-30-min-med.jpg);
+  }
+
+  .ms-4-img {
+    background-image: url(../img/cards__payment-med-low.jpg);
+  }
+
+  .ms-5-img {
+    background-image: url(../img/childrens__corner-new.jpg);
+  }
+
+  .ms-6-img {
+    background-image: url(../img/atmosphere-new.jpg);
+  }
+
+  .ms-7-img {
+    background-image: url(../img/professional__hairmaster-med-low.jpg);
+  }
+
+  .main-slider-info {
+    font-size: 46px;
+  }
+
+  .service__li:nth-child(2n + 1) {
+    margin-right: 80px;
+  }
+
+  .slider__content {
+    flex-direction: column;
+  }
+
+  .slider__item__first-pic {
+    margin-bottom: 20px;
+  }
+
+  .h4 {
+    margin-bottom: 10px;
+  }
+
+  .container-footer {
+    display: block;
+  }
+
+  .footer__left-content {
+    width: 100%;
+    padding: 40px 50px 90px 50px;
+  }
+
+  .vk {
+    transform: translateX(-18px);
+  }
+
+  .footer__right-contant {
+    width: 100%;
+    height: 405px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-slider-info {
+    font-size: 32px;
+  }
+
+  .service__li:nth-child(2n + 1) {
+    margin-right: 85px;
+    margin-left: 85px;
+  }
+
+  .service__li:nth-last-child(1n) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 461px) {
+  .tel {
+    font-size: 20px;
+  }
+
+  .h2 {
+    font-size: 35px;
+  }
+
+  .h4 {
+    font-size: 30px;
+  }
+
+  .menu__item {
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 0;
+    max-width: 100%;
+    min-height: 552px;
+  }
+
+  .ms-1-img {
+    background-image: url(../img/desinfaction-low.jpg);
+  }
+
+  .ms-2-img {
+    background-image: url(../img/haircut-30-min-low.jpg);
+  }
+
+  .ms-3-img {
+    background-image: url(../img/without__recording-low.jpg);
+  }
+
+  .ms-4-img {
+    background-image: url(../img/cards__payment-low.jpg);
+  }
+
+  .ms-5-img {
+    background-image: url(../img/childrens__corner-new-very-low.jpg);
+  }
+
+  .ms-7-img {
+    background-image: url(../img/professional__hairmaster-low.jpg);
+  }
+
+  .ms-8-img {
+    background-image: url(../img/cheap-low.jpg);
+  }
+
+  .menu__content:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .container-main-slider,
+  .container-logo {
+    min-height: 70vh;
+  }
+
+  .main-slider-info {
+    font-size: 28px;
+  }
+
+  .slider__item {
+    padding: 40px 0;
+  }
+
+  .slider__item__first-pic {
+    min-width: 100%;
+    height: 300px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 24px;
+    height: 44px;
+  }
+
+  .reviews__p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 455px) {
+  .service__li:nth-child(2n + 1) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .lower-slider-photo {
+    height: 542px;
+  }
+}
+
+@media (max-width: 365px) {
+  .logo,
+  .service,
+  .offers,
+  .pictures {
+    padding-bottom: 10px;
+  }
+
+  .service,
+  .offers,
+  .slider,
+  .pictures,
+  .reviews {
+    padding-top: 10px;
+  }
+
+  .main-slider-info {
+    font-size: 24px;
+  }
+
+  .container-logo {
+    padding: 100px 0;
+  }
+
+  .tel-box {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .tel-box::before {
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    background-image: url(../img/phone-icon-low.svg);
+  }
+
+  .tel {
+    font-size: 15px;
+  }
+
+  .service__main-heading {
+    margin-bottom: 20px;
+  }
+
+  .menu__item {
+    padding-top: 40px;
+    min-height: 320px;
+  }
+
+  .menu__content:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 38px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .lower-slider-photo {
+    height: 442px;
+  }
+
+  .reviews__link {
+    padding: 10px 60px 10px 10px;
+  }
+
+  .reviews__link::after {
+    right: 10px;
+  }
+
+  .footer__tel::before,
+  .footer__place::before,
+  .footer__email::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -50px;
+  }
+
+  .footer__tel::before {
+    background-image: url(../img/phone-icon-footer-low.svg);
+  }
+
+  .footer__el {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 850px) {
+  .lower-slider-photo {
+    height: 80vh;
+    object-fit: scale-down;
+  }
+}
+
+@media (max-height: 600px) {
+  .container-main-slider,
+  .container-logo {
+    min-height: 100vh;
+  }
+
+  .ms-2-img {
+    background-image: url(../img/haircut-30-min.jpg);
+  }
+
+  .ms-3-img {
+    background-image: url(../img/without__recording.jpg);
+  }
+
+  .ms-4-img {
+    background-image: url(../img/cards__payment.jpg);
+  }
+
+  .ms-5-img {
+    background-image: url(../img/childrens__corner-new-med.jpg);
+  }
+
+  .ms-6-img {
+    background-image: url(../img/atmosphere.jpg);
+  }
+
+  .ms-7-img {
+    background-image: url(../img/professional__hairmaster.jpg);
+  }
+
+  .ms-8-img {
+    background-image: url(../img/cheap.jpg);
+  }
+}
+
+
+@media (max-height: 360px) {
+  .container-logo {
+    background-image: url(../img/figuremain.jpg);
+  }
+}
