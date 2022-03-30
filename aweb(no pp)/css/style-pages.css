@@ -1,0 +1,741 @@
+.seo-page__first-screen {
+	background: url('/img/seo-bg.png');
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 26px 0;
+}
+
+.flex__block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex__block_items-center {
+	align-items: center;
+}
+
+.flex__between {
+	justify-content: space-between;
+}
+
+.flex__center {
+	justify-content: center;
+}
+
+.seo-page__first-screen_desc {
+	flex-basis: calc(100% - 365px);
+	position: relative;
+}
+
+.seo-page__first-screen_form {
+	flex-basis: 275px;
+	margin-top: 45px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.seo-page__first-screen_big-text {
+	font-size: 160px;
+	color: #950f0f;
+	position: absolute;
+	top: -30px;
+    margin: 0;
+    left: -70px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.seo-page__first-screen_title {
+	font-size: 40px;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	font-weight: normal;
+	line-height: 44px;
+}
+
+.seo-page__first-screen_preim {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.seo-page__preim-item {
+	flex-basis: 26%;
+	position: relative;
+}
+
+.seo-page__preim-item p {
+	color: #fff;
+}
+
+.seo-page__preim-number {
+	font-size: 24px;
+	background: #bb0d0d;
+	border-radius: 50%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.seo-page__preim-item:after {
+	position: absolute;
+	content: '';
+	right: -54px;
+    top: 52px;
+	height: 1px;
+	width: 100%;
+	background: #bb0d0d;
+}
+
+.seo-page__preim-item:last-child:after {
+	display: none;
+}
+
+.exform_wrapper.callback-open .mf_submit .send_btn {
+	cursor: pointer;
+}
+
+.seo-page__preim-text {
+	margin-top: 0;
+	font-size: 16px;
+}
+
+.seo-page__first-screen_text {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.seo-page__first-screen_text span {
+	font-weight: bold;
+}
+
+.seo-page__first-screen_form-head {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	color: #fff;
+}
+
+.seo-page__first-screen_form-text {
+	font-size: 14px;
+	color: #fff;
+	margin: 0;
+}
+
+.seo-page__preim-section {
+	background: url('/img/seo-preim.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 10px;
+}
+
+.seo-page__preim-section_big-text {
+	color: #fff;
+	text-align: center;
+	font-size: 160px;
+	margin: 0;
+}
+
+.seo-page__preim-section-head {
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	width: 284px;
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 142px);
+}
+
+.seo-page__preim-section-head span {
+	font-weight: bold;
+	display: block;
+}
+
+.seo-page__preim-section_item {
+	flex-basis: 280px;
+	text-align: center;
+}
+
+.seo-page__preim-section_item p, .kr-page__preim-section_item p {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+
+.seo-page__preim-section_item span,  .kr-page__preim-section_item span {
+	color: #bc0e0e;
+}
+
+.seo-page__preim-block {
+	padding-top: 40px;
+}
+
+.seo-page__preim-section_item1 {
+    position: absolute;
+    top: 128px;
+    width: 280px;
+    left: 0;
+}
+
+.seo-page__preim-section_item2 {
+	position: relative;
+}
+
+.seo-page__preim-section_item3 {
+	position: absolute;
+    top: 145px;
+    width: 280px;
+    right: 0;
+}
+
+.seo-page__preim-section .wrapper {
+	position: relative;
+}
+
+.seo-page__preim-section_item2:after {
+	content: '';
+    position: absolute;
+    background: url(/img/sh-dot2.png);
+    width: 358px;
+    height: 149px;
+    background-repeat: no-repeat;
+    left: -258px;
+    top: -72px;
+}
+
+.seo-page__preim-section_item2:before {
+	content: '';
+    position: absolute;
+    background: url(/img/sh-dot1.png);
+    width: 356px;
+    height: 126px;
+    background-repeat: no-repeat;
+    left: 184px;
+    top: -65px;
+}
+
+.seo-page__services-text {
+	font-size: 14px;
+	text-align: justify;
+	margin: 0px;
+}
+
+.seo-page__services-text a {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.seo-page__services_head {
+	font-size: 36px;
+	z-index: 2;
+	position: relative;
+	margin: 0;
+}
+
+.seo-page__services_head span {
+	font-weight: bold;
+}
+
+.seo-page__services_header {
+	position: relative;
+	flex-basis: 460px;
+}
+
+.seo-page__services_bix-text {
+	position: absolute;
+	color: #f5f5f5;
+	font-size: 160px;
+	margin: 0;
+    top: -60px;
+    left: -50px;
+}
+
+.seo-page__services_header_desc {
+	flex-basis: 520px;
+	margin-right: 50px;
+}
+
+.seo-page__services {
+	margin-top: 50px;
+}
+
+.text__bold {
+	font-weight: bold;
+}
+
+.seo-page__services-item {
+	flex-basis: 350px;
+	border-top: 4px solid #bb0d0d;
+	margin-top: 50px;
+	padding: 40px 30px;
+	border-radius: 3px;
+	background: #fff;
+	-webkit-box-shadow: -3px 18px 20px 0px rgba(230,230,230,1);
+	-moz-box-shadow: -3px 18px 20px 0px rgba(230,230,230,1);
+	box-shadow: -3px 18px 20px 0px rgba(230,230,230,1);
+}
+
+.seo-page__services-head_desc {
+	font-size: 12px;
+	margin: 0;
+}
+
+.seo-page__services-head {
+	font-weight: bold;
+	color: #bc0e0e;
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.seo-page__services_row-name {
+	font-size: 12px;
+}
+
+.seo-page__services_row-desc {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.seo-page__services-price {
+	font-weight: bold;
+	text-align: center;
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+.seo-page__services_row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #d7d7d7;
+	_padding: 20px 0;
+}
+
+.seo-page__services_row p {
+	flex-basis: 45%;
+	margin: 5px 0;
+}
+
+.seo-page__services-price_desc {
+	font-size: 13px;
+	text-align: center;
+}
+
+.seo-page__services-price_desc span {
+	font-size: 16px;
+	font-weight: bold;
+	color: #bc0e0e;
+	display: block;
+	text-transform: uppercase;
+}
+
+.seo-page__services-btn {
+	color: #fff;
+	text-transform: uppercase;
+	background: #bc0e0e;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10.5px 0;
+	font-weight: bold;
+	font-size: 16px;
+	width: 170px;
+	cursor: pointer;
+	margin: 15px auto;
+}
+
+.kr-page__preim-section_item {
+	flex-basis: 250px;
+	text-align: center;
+}
+
+.kr-page__preim-block {
+	position: relative;
+	padding-top: 50px;
+}
+
+
+.kr-page__preim-section_item1 {
+	position: absolute;
+    top: -65px;
+    left: 0;
+    width: 250px;
+}
+
+.kr-page__preim-section_item2, .kr-page__preim-section_item3 {
+	margin: 0 20px;
+}
+
+.kr-page__preim-section_item2 {
+	margin-top: -10px;
+}
+
+.kr-page__preim-section_item4 {
+	position: absolute;
+    top: -65px;
+    right: 7px;
+    width: 250px;
+}
+
+.kr-page__preim-section_item2:after {
+	content: '';
+    position: absolute;
+    background: url(/img/kr-dots3.png);
+    width: 218px;
+    height: 29px;
+    background-repeat: no-repeat;
+    left: 468px;
+    top: 50px;
+}
+
+.kr-page__preim-section_item2:before {
+	content: '';
+    position: absolute;
+    background: url(/img/kr-dots2.png);
+    width: 263px;
+    height: 83px;
+    background-repeat: no-repeat;
+    left: 172px;
+    top: -28px;
+}
+
+
+.kr-page__preim-section_item3:after {
+	content: '';
+    position: absolute;
+    background: url(/img/kr-dots1.png);
+    width: 232px;
+    height: 119px;
+    background-repeat: no-repeat;
+    right: 161px;
+    top: -42px;
+}
+
+.kr-page__preim-section {
+	padding-bottom: 25px;
+}
+
+
+.services__desc_right .seo-page__services_row-desc {
+	text-align: right;
+}
+
+.seo-page__services_row-desc span {
+	font-size: 13px;
+	font-weight: normal;
+	display: block;
+}
+
+span.sale__text {
+	color: #bc0e0e;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.text__through {
+	text-decoration: line-through;
+}
+
+span.block__inline {
+	display: inline;
+}
+
+.index__services {
+	padding-top: 90px;
+}
+
+.index__services-desc {
+	font-size: 16px;
+}
+
+.index__services-price {
+	font-size: 14px;
+	width: calc(100% - 200px);
+}
+
+.index__services-price span {
+	font-weight: bold;
+	color: #bc0e0e;
+	font-size: 18px;
+}
+
+.index__services-sale {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.index__services-sale span {
+	font-weight: bold;
+	color: #bc0e0e;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.index__services-name, .index__services-name a {
+	font-weight: bold;
+	text-align: center;
+	color: #bc0e0e;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+.index__services-btn {
+	background: #bc0e0e;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 20px;
+	width: 175px;
+	margin: 10px auto;
+}
+
+.index__services-btn a {
+	color: #fff;
+	display: block;
+	padding: 10.5px 0;
+}
+
+.index__services-price_block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.index__services-item {
+	flex-basis: 350px;
+}
+
+.index__services-img {
+	position: relative;
+}
+
+.index__services-img a {
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+.index__services-img a:after {
+	content: '';
+	background: url('/img/ind-service-hover.png');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: none;
+}
+
+.mar-b30 {
+	margin-bottom: 30px;
+}
+
+.index__services-img a:hover:after {
+	display: block;
+}
+
+.right-a.f-size14 p {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1250px) {
+	.seo-page__first-screen_big-text {
+		left: 0;
+	}
+
+	.seo-page__preim-section_item2:after, .seo-page__preim-section_item2:before {
+		display: none;
+	}
+
+	.seo-page__preim-section_item1, .seo-page__preim-section_item3 {
+		position: static;
+	}
+
+	.seo-page__preim-section_item {
+		flex-basis: 29%;
+		margin: 0 2%;
+	}
+
+	.seo-page__services-item {
+		flex-basis: 32%;
+	}
+
+	.seo-page__services-head {
+		font-size: 20px;
+	}
+
+	.seo-page__services_header {
+		flex-basis: 50%;
+	}
+
+	.seo-page__services_header_desc {
+		margin-right: 0;
+		flex-basis: 45%;
+	}
+
+	.kr-page__preim-section_item3:after, .kr-page__preim-section_item2:after, .kr-page__preim-section_item3:before, .kr-page__preim-section_item2:before {
+		display: none;
+	}
+
+	.index__services-item {
+		flex-basis: 30%;
+	}
+
+	.index__services-img img {
+		width: 100%;
+	}
+
+	.index__services-price {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.seo-page__preim-text {
+		font-size: 15px;
+	}
+
+	.seo-page__first-screen_text {
+		font-size: 20px;
+	}
+
+	.seo-page__first-screen_title {
+		font-size: 30px;
+	}
+
+	.seo-page__first-screen_big-text {
+		font-size: 110px;
+		top: -14px;
+	}
+
+	.seo-page__first-screen_desc {
+		flex-basis: calc(100% - 300px);
+	}
+
+	.seo-page__services_row p {
+		flex-basis: 100%;
+	}
+
+	.kr-page__preim-section_item1, .kr-page__preim-section_item4 {
+		position: static;
+		width: auto;
+	}
+
+	.kr-page__preim-section_item2 {
+		margin-top: 0;
+	}
+
+	.kr-page__preim-section_item {
+		flex-basis: 45%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.seo-page__first-screen {
+		background-size: cover;
+	}
+	.seo-page__first-screen_desc {
+		flex-basis: 100%;
+	}
+
+	.seo-page__first-screen_form {
+		flex-basis: 100%;
+	}
+
+	.seo-page__preim-item:after {
+		display: none;
+	}
+
+	.seo-page__preim-item {
+		flex-basis: 60%;
+    	text-align: center;
+    	margin: 0 auto;
+	}
+
+	.exform_wrapper.callback-open .mf_submit {
+		text-align: center;
+	}
+
+	.seo-page__preim-section_item {
+		flex-basis: 60%;
+	}
+
+	.seo-page__services-item {
+		flex-basis: 100%;
+	}
+
+	.seo-page__services_header {
+		flex-basis: 100%;
+	}
+
+	.seo-page__services_header_desc {
+		flex-basis: 100%;
+	}
+
+	.seo-page__services_head {
+		margin: 40px 0;		
+	}
+
+	.seo-page__services_bix-text {
+		left: 0;
+	}
+
+	.kr-page__preim-section_item {
+		flex-basis: 100%;
+	}
+
+	.seo-page__first-screen_big-text {
+		font-size: 60px;
+		position: static;
+	}
+
+	.seo-page__preim-section_big-text, .seo-page__services_bix-text {
+		display: none;
+	}
+
+	.seo-page__preim-section-head {
+		position: static;
+		text-align: center;
+		width: auto;
+	}
+
+	.exform_wrapper.callback-open-reklama .mf_submit {
+		text-align: center;
+	}
+
+	.index__services-item {
+		flex-basis: 100%;
+		margin: 20px 0;
+	}
+}

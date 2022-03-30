@@ -1,0 +1,175 @@
+@import url("../../../css/mform.css");
+
+.exform_wrapper.callback-create {width:100%; font:20px 'Roboto', sans-serif; color:#000; border:none; border-radius:0;}
+
+.exform_wrapper.callback-create .exform_header {
+    color: #ffffff;
+    width: 90%;
+    font-weight: 700;
+    font-size: 18px;
+}
+.exform_wrapper.callback-create .exform_addmsg {text-align:center; font-size:12px; margin:10px 0 0;}
+
+.exform_wrapper.callback-create input:focus {
+  background:initial;
+  outline: none;
+  color: #fff;
+}
+/* .exform_wrapper.callback-create .inpt_wrpr {margin-top: 40px;} */
+.exform_wrapper.callback-create input {
+    font-size: 13px;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  background: initial;
+  padding: 0px 7px;
+  margin: 0;
+  height: 25px;
+  text-align: left;
+  margin: 8px 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.exform_wrapper.callback-create div.err {height:0; float:right; position:relative; left:0; top:11px;}
+
+.exform_wrapper.callback-create .mf_submit {}
+.exform_wrapper.callback-create .mf_submit .send_btn {
+    color: #b41515;
+    background: #fff;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 12px 0 28px 0;
+    width: 260px;
+    border: none;
+    font-size: 16px;
+    margin-top: 35px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+ }
+
+.exform_wrapper.callback-create .exf_captcha input, .exform_wrapper.callback-create .captcha_img {float:left;}
+.exform_wrapper.callback-create .exf_captcha input {width:130px;}
+.exform_wrapper.callback-create .captcha_img {width:160px; height:34px; margin:2px 0 0 4px;}
+#mf_captcha_callback-create {width:160px; border:solid 1px #ccc;}
+.exform_wrapper.callback-create .exf_captcha a {display:block; width:32px; height:32px; float:right; margin:4px -10px 0 0; background:url(refresh.png);}
+
+.exform_wrapper.callback-create.finmsg {background: #fff;width:400px; min-height:50px; padding:10px; position:absolute; left:50%; top:50%; margin:-60px 0 0 -200px;}
+.exform_wrapper.callback-create.finmsg p{text-align:center;}
+.exf_captcha {display: none;}
+.close_btn {
+    width: 20px!important;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url('/exform/imgs/exit.png') no-repeat;
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.close_btn:focus { outline: none; }
+
+.lab{
+    font-size:13px;
+}
+
+.exform_wrapper.callback-create input::-webkit-input-placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create input::-ms-input-placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create input::placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create input::-moz-placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create::-webkit-input-placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create input::-moz-placeholder {color: #fff; opacity: 1;}
+.exform_wrapper.callback-create input:-moz-placeholder {color: #fff; opacity: 1;}
+
+
+@import url("../../../css/mform.css");
+
+.exform_wrapper.callback-zayav {
+	width: 100%;
+    font-size: 20px;
+    color: #000;
+    background: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+	font-family: 'Roboto', sans-serif;
+	    margin-top: 30px;
+}
+
+.exform_wrapper.callback-zayav .exform_header {text-align:center; padding:5px 0; margin:5px; color: #B31212; text-transform:uppercase;}
+.exform_wrapper.callback-zayav .exform_addmsg {text-align:center; font-size:12px; margin:10px 0;}
+
+.exform_wrapper.callback-zayav input[type="text"]:focus, .exform_wrapper.callback-zayav .exform_wrapper textarea:focus {background:transparent;}
+.exform_wrapper.callback-zayav .inpt_wrpr {margin: 0;
+    padding: 0;     display: flex;
+    _justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: flex-end;}
+.exform_wrapper.callback-zayav input[type="text"],
+.exform_wrapper.callback-zayav textarea {
+	 background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 5px;
+	outline:none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    width: 23%;
+	color: #fff;
+    margin-right: 10px;
+
+}
+.exform_wrapper.callback-zayav input::-webkit-input-placeholder {color:#fff;}
+.exform_wrapper.callback-zayav input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.exform_wrapper.callback-zayav input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.exform_wrapper.callback-zayav input:-ms-input-placeholder      {color:#fff;}
+.exform_wrapper.callback-zayav textarea{height:50px; resize:none; font-family: Arial;}
+
+.exform_wrapper.callback-zayav div.err {height:0; float:right; position:relative; left:0; top:11px;}
+
+.exform_wrapper.callback-zayav .mf_submit {    width: 24%;}
+.exform_wrapper.callback-zayav .mf_submit .send_btn{
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #B60E0E;
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: 0;
+ }
+.exform_wrapper.callback-zayav .exform_addmsg a{
+	font-size: 12px;
+}
+.exform_wrapper.callback-zayav .exf_captcha input[type="text"], .exform_wrapper.callback-zayav .captcha_img {float:left;}
+.exform_wrapper.callback-zayav .exf_captcha input[type="text"] {width:130px;}
+.exform_wrapper.callback-zayav .captcha_img {width:160px; height:34px; margin:2px 0 0 4px;}
+#mf_captcha_callback {width:160px; border:solid 1px #ccc;}
+.exform_wrapper.callback-zayav .exf_captcha a {display:block; width:32px; height:32px; float:right; margin:4px -10px 0 0; background:url(refresh.png);}
+
+.exform_wrapper.callback-zayav.finmsg {width:400px; min-height:50px; padding:10px; position:absolute; left:50%; top:50%; margin:-60px 0 0 -200px;}
+.exform_wrapper.callback-zayav.finmsg p{text-align:center;}
+.exf_captcha {display: none;}
+.close_btn {
+	width: 20px!important;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: url('/exform/imgs/exit.png') no-repeat;
+	background-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.close_btn:focus { outline: none; }
+
+.lab{
+	font-size:13px;
+}
+
+
